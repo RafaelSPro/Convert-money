@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevClub Convert Money</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>DevClub Convert Money</h1>
+        </header>
+        <main>
+            <label for="">
+                Converter <span>de</span>
+                <select name="" id="">
+                    <option value="">
+                        R$ <span class="coin">Real brasileiro</span>
+                    </option>
+                </select>
+            </label>
+            <label for="">
+                Converter <span>para</span>
+                <select name="" id="currency-select">
+                    <option>
+                        U$ Dólar Americano
+                    </option>
+                    <option>
+                        € Euro
+                    </option>
+                    <option>
+                        Bitcoin
+                    </option>
+                </select>
+            </label>
+
+            <label for="">
+                Valor
+                <input id="value-real" type="text" placeholder="R$ 10.000">
+            </label>
+            <button id="converter-button">Converter</button>
+            <section class="converter">
+                <div class="converter-coin">
+                    <img src="./imagens/brasil 2.png" alt="Brasil">
+                    <p class="converter-text">Real</p>
+                    <p id="real-value-text" class="converter-value">R$ 10.000</p>
+                </div>
+                <div class="converter-arrow">
+                    <img src="./imagens/Vector.png" alt="seta">
+                </div>
+                <div class="converter-coin" >
+                    <img src="./imagens/estados-unidos (1) 1.png" id="currency-img" alt="Estados Unidos">
+                    <p class="converter-text" id="convert-name">Dólar Americano</p>
+                    <p id="result-convert" class="converter-value">U$ 2.000</p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
